@@ -1,0 +1,71 @@
+﻿@using tripenticer.Models
+@model IEnumerable<Package>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+    <!--// Sub Header //-->
+<div class="kd-subheader">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="subheader-info">
+                    <h1>Package List</h1>
+                    <!-- <p>Morbi euismod euismod consectetur. Donec pharetra, lacus at convallis maximus, arcu quam accumsan diam, et aliquam odio elit gravida mi</p> -->
+                </div>
+                <div class="kd-breadcrumb">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Our Team</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--// Sub Header //-->
+<!--// Content //-->
+<div class="kd-content">
+
+    <!--// Page Section //-->
+    <section class="kd-pagesection" style=" padding 0px 0px 10px 0px; ">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="kd-package-list">
+                        <div class="row">
+                            @foreach (Package item in Model)
+                            {
+                                <article class="col-md-4">
+                                    <figure>
+                                        <a href="#"><img src="~/Assets/Images/Packages/@item.ThumImg" alt=""></a>
+                                        <figcaption>
+                                            <span class="package-price thbg-color">Rs.@item.Price</span>
+                                            <div class="kd-bottomelement">
+                                                <h5>@Html.ActionLink(item.Name, "Details", new { id = item.PackageId })</h5>
+                                                <div class="days-counter"><span>@item.noDays</span> <br> days</div>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                            }
+                            
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--// Page Section //-->
+
+</div>
+<!--// Content //-->
+

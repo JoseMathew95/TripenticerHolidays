@@ -1,0 +1,85 @@
+﻿@using tripenticer.Models
+@model Package
+
+<!--// Content //-->
+<div class="kd-content">
+
+    <!--// Page Section //-->
+    <section class="kd-pagesection" style=" padding 0px 0px 0px 0px; background #ffffff; ">
+        <div class="container">
+            <div class="row">
+
+                <!--// Package Detail //-->
+                <div class="col-md-8">
+                    <div class="kd-package-detail">
+
+                        <figure class="detail-thumb"><a href="#"><img src="~/Assets/Images/Packages/@Model.ThumImg" alt=""></a></figure>
+                        <div class="kd-pkg-info">
+                            <ul>
+                                <li><i class="fa fa-map-marker"></i> <strong>Duration:</strong>@Model.noDays Days</li>
+                                <li><i class="fa fa-paper-plane"></i> <strong>lOCATION:</strong> @Model.Location</li>
+                                <li><i class="fa fa-tag"></i> <strong>Price:</strong> Rs.@Model.Price</li>
+                            </ul>
+                            <a href="#" class="kd-booking-btn thbg-color">bOOK nOW</a>
+                        </div>
+                        <blockquote>Trip-Enticer Holidays with a team of qualified driver-guides and proficient staff ready to assist and support.We offer customized programs and tours suitable for all classes – families, honeymooners, etc . </blockquote>
+                        <div class="kd-rich-editor">
+                            <strong>DESCRIPTION:</strong>
+                            <p>@Model.Description</p>
+                            <strong>ITINERARY:</strong>
+                            <p>@Model.Itinerary</p>
+                        </div>
+
+                        <!--// User Tag //-->
+                        <div class="kd-user-tag">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="kd-tag">
+                                        <span><i class="fa fa-tag"></i> Tags:</span>
+                                        <ul>
+                                            <li><a href="#">Videos</a></li>
+                                            <li><a href="#">Wallpapers</a></li>
+                                            <li><a href="#">Travel</a></li>
+                                            <li><a href="#">Cruise</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="kd-social-network">
+                                        <ul>
+                                            <li><a href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#" data-original-title="Tumblr"><i class="fa fa-tumblr"></i></a></li>
+                                            <li><a href="#" data-original-title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+                                            <li><a href="#" data-original-title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// User Tag //-->
+                </div>
+                <!--// Package Detail //-->
+
+                <aside class="col-md-4">
+
+                    <div class="widget widget_search">
+                        <div class="kd-widget-title"><h2>Search Packages</h2></div>
+                        <form>
+                            <input type="text" placeholder="Search">
+                            <input type="submit" value="">
+                            <i class="fa fa-search"></i>
+                        </form>
+                    </div>
+
+                    
+                </aside>
+
+            </div>
+        </div>
+    </section>
+    <!--// Page Section //-->
+
+</div>
+<!--// Content //-->
+

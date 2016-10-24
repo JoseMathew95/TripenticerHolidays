@@ -1,0 +1,59 @@
+﻿@using tripenticer.Models
+@model IEnumerable<Property>
+
+      <!--// Page Section //-->
+<section class="kd-pagesection" style=" padding 50px 0px 20px 0px; ">
+    <br /><br />
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-8">
+                <div class="kd-section-title"><h3>Tourism Properties For Sale/Lease</h3></div>
+                <div class="kd-blog-list kd-blogmedium">
+                    <div class="row">
+
+                        @foreach (Property item in Model)
+                        {
+                            <div class="col-md-12">
+                                <div class="bloginner">
+                                    <figure>
+                                        <a href="#"><img src="~/Assets/Images/Properties/@item.ThumImg" alt=""></a>
+                                        <figcaption><a href="#" class="fa fa-plus-circle"></a></figcaption>
+                                    </figure>
+                                    <div class="kd-bloginfo">
+                                        <h2><a href="#">@item.Name</a></h2>
+                                        <ul class="kd-postoption">
+                                            <li><a href="#" class="thcolorhover">@item.Category</a></li>
+                                            <li><a href="#" class="thcolorhover">@item.Location</a></li>
+                                        </ul>
+                                        <p>@item.Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                       
+
+                    </div>
+                </div>
+            </div>
+
+            <aside class="col-md-4">
+
+                <div class="widget widget_search">
+                    <div class="kd-widget-title"><h2>Search Tourism Properties</h2></div>
+                    <form>
+                        <input type="text" placeholder="Search">
+                        <input type="submit" value="">
+                        <i class="fa fa-search"></i>
+                    </form>
+                </div>
+
+
+            </aside>
+
+        </div>
+    </div>
+    <br /><br />
+</section>
+<!--// Page Section //-->

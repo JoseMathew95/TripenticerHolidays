@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <header id="mainheader">
+        <!--// Top Baar //-->
+        <div class="kd-topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <ul class="kd-topinfo">
+                            <li>
+                                <div id="lang_sel">
+                                    <ul>
+                                        <li>
+                                            <a class="lang_sel_sel icl-en" href="#">EN</a>
+                                            <ul>
+                                                <li class="icl-fr">
+                                                    <a href="#">sp</a>
+                                                </li>
+                                                <li class="icl-de">
+                                                    <a href="#">HI</a>
+                                                </li>
+                                                <li class="icl-nl">
+                                                    <a href="#">TM</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i> Phone: +91 423 11171
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope-o"></i> <a href="#">Email: keralahost@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <ul class="kd-userinfo">
+                            <li>
+                                <div class="kd-social-network">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#registerModalbox">Register</a>
+                                <!-- Modal -->
+                                <div class="modal fade kd-loginbox" id="registerModalbox" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                                                <div class="kd-login-title">
+                                                    <h2>Register TO</h2>
+                                                    <span>Your Account</span>
+                                                    <div class="kd-login-network">
+                                                        <ul>
+                                                            <li><a href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i> Login with Facebook</a></li>
+                                                            <li><a href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i> Login with Twitter</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="kd-login-sepratore"><span>OR</span></div>
+
+                                                <form>
+                                                    <p><i class="fa fa-envelope-o"></i> <input type="text" placeholder="Email Address"></p>
+                                                    <p><i class="fa fa-lock"></i> <input type="password" placeholder="Your Password"></p>
+                                                    <p><input type="submit" value="Register now" class="thbg-color"> </p>
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#Modalbox">Login</a>
+                                <!-- Modal -->
+                                <div class="modal fade kd-loginbox" id="Modalbox" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                                                <div class="kd-login-title">
+                                                    <h2>LOGIN TO</h2>
+                                                    <span>Your Account</span>
+                                                    <div class="kd-login-network">
+                                                        <ul>
+                                                            <li><a href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i> Login with Facebook</a></li>
+                                                            <li><a href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i> Login with Twitter</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="kd-login-sepratore"><span>OR</span></div>
+
+                                                <form>
+                                                    <p><i class="fa fa-envelope-o"></i> <input type="text" placeholder="Email Address"></p>
+                                                    <p><i class="fa fa-lock"></i> <input type="password" placeholder="Your Password"></p>
+                                                    <p><input type="submit" value="Login now" class="thbg-color"> <a href="#">Forget Password?</a></p>
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// Top Baar //-->
+        <!--// Header Baar //-->
+        <div class="kd-headbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><a href="index.html" class="logo"><img src="~/Assets/Images/logo.jpg" alt=""></a></div>
+                    <div class="col-md-9">
+                        <div class="kd-rightside">
+                            <nav class="navbar navbar-default navigation">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li>
+                                            @Html.ActionLink("Home", "Index", "Home")
+                                        </li>
+                                        <li>
+                                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                                        <li>
+                                        <li>@Html.ActionLink("Tour Packages", "Index", "Package")
+                                        </li>
+                                        <li>
+                                            <a href="">Gallery</a>
+                                        </li>
+                                        <li>
+                                            @Html.ActionLink("Tourism Properties - Buy/Lease", "Index", "Property")
+                                        </li>
+                                        <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+                                    </ul>
+                                </div>
+                                <!-- /.navbar-collapse -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// Header Baar //-->
+
+    </header>
+    
+        @RenderBody()
+
+
+
+    <!--// Footer //-->
+    <footer id="footer-widget">
+        <div class="container">
+            <div class="row">
+
+                <div class="widget col-md-4 kd-textwidget">
+                    <div class="kd-widget-title"><h2>About Tripenticer</h2></div>
+                    <div class="kd-contactinfo">
+                        <p>Trip-Enticer Ecogreen Holidays is a boutique holiday/Leisure company and tailor-made travel specialist offering holidays to Kerala & South India. Started in 2005 , with a team of qualified driver-guides and proficient staff ready to assist and support .</p>
+                      
+                    </div>
+                </div>
+
+                <div class="widget col-md-4 kd-followus-widget">
+                    <div class="kd-widget-title"><h2>Follow Us</h2></div>
+                    <ul>
+                        <li><a href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#" data-original-title="instagram"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#" data-original-title="Rss"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#" data-original-title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#" data-original-title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#" data-original-title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#" data-original-title="Google-Plus"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" data-original-title="skype"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="widget col-md-4 kd-userinfo-widget">
+                    <div class="kd-widget-title"><h2>Contact</h2></div>
+                    <ul>
+                        <li><i class="fa fa-envelope"></i> Tripenticer Holidays</li>
+                        <li><i class="fa fa-map-marker"></i> Chalakudy, Kerala-680722, India</li>
+                        <li><i class="fa fa-phone-square"></i>  +91 9961466495 , (0) 9142311171,</li>
+                        <li><i class="fa fa-skype"></i> <a href="#">visit2southindia@gmail.com</a></li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </div>
+    </footer>
+    <!--// Footer //-->
+    <!--// CopyRight //-->
+    <div id="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"><p>© Copyright 2008 All Rights Reserved by Tripenticer</p></div>
+                <div class="col-md-6">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li><a href="#">Blog</a></li>
+                            <li>@Html.ActionLink("Tour Packages", "Index", "Package")</li>
+                            <li>@Html.ActionLink("Tourism Properties - Buy/Lease", "Index", "Property")</li>
+                            <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// CopyRight //-->
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
