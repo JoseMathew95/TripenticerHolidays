@@ -198,6 +198,8 @@
     <Content Include="Assets\Images\IndiaTourism.jpg" />
     <Content Include="Assets\Images\Litigation.jpg" />
     <Content Include="Assets\Images\logo.jpg" />
+    <Content Include="Assets\Images\Packages\keralaHoneymoon5days.jpg" />
+    <Content Include="Assets\Images\Properties\Ecogreen.jpg" />
     <Content Include="Assets\Images\TourismProperty.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -309,8 +311,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Assets\Images\Packages\" />
-    <Folder Include="Assets\Images\Properties\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
