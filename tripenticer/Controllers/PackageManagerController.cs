@@ -35,7 +35,7 @@ namespace tripenticer.Controllers
             return View(package);
         }
 
-        // GET: PackageManager/Create
+        // GET: PackageManager/Create Create
         public ActionResult Create()
         {
             return View();
