@@ -14,28 +14,9 @@
         <div class="kd-topbar">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7">
+                   <div class="col-md-7">
                         <ul class="kd-topinfo">
-                            <li>
-                                <div id="lang_sel">
-                                    <ul>
-                                        <li>
-                                            <a class="lang_sel_sel icl-en" href="#">EN</a>
-                                            <ul>
-                                                <li class="icl-fr">
-                                                    <a href="#">sp</a>
-                                                </li>
-                                                <li class="icl-de">
-                                                    <a href="#">HI</a>
-                                                </li>
-                                                <li class="icl-nl">
-                                                    <a href="#">TM</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
+                           
                             <li>
                                 <i class="fa fa-phone"></i> Phone: +91 423 11171
                             </li>
@@ -43,81 +24,19 @@
                                 <i class="fa fa-envelope-o"></i> <a href="#">Email: keralahost@gmail.com</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> 
                     <div class="col-md-5">
                         <ul class="kd-userinfo">
                             <li>
                                 <div class="kd-social-network">
                                     <ul>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="https://www.facebook.com/besttourpackage"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/Tripenticer1"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://in.linkedin.com/in/tripenticer"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://plus.google.com/u/0/+Ecogreenkeralaholidays-Tripenticer"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="https://www.youtube.com/channel/UCk_TlVQbVWr-acFPBRohpZw"><i class="fa fa-youtube"></i></a></li>
+                                        <li><a href="http://tripenticer-kerala-tour-packages.blogspot.ca/"><i class="fa fa-rss"></i></a></li>
                                     </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#" data-toggle="modal" data-target="#registerModalbox">Register</a>
-                                <!-- Modal -->
-                                <div class="modal fade kd-loginbox" id="registerModalbox" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
-                                                <div class="kd-login-title">
-                                                    <h2>Register TO</h2>
-                                                    <span>Your Account</span>
-                                                    <div class="kd-login-network">
-                                                        <ul>
-                                                            <li><a href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i> Login with Facebook</a></li>
-                                                            <li><a href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i> Login with Twitter</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="kd-login-sepratore"><span>OR</span></div>
-
-                                                <form>
-                                                    <p><i class="fa fa-envelope-o"></i> <input type="text" placeholder="Email Address"></p>
-                                                    <p><i class="fa fa-lock"></i> <input type="password" placeholder="Your Password"></p>
-                                                    <p><input type="submit" value="Register now" class="thbg-color"> </p>
-                                                </form>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#" data-toggle="modal" data-target="#Modalbox">Login</a>
-                                <!-- Modal -->
-                                <div class="modal fade kd-loginbox" id="Modalbox" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <a href="#" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
-                                                <div class="kd-login-title">
-                                                    <h2>LOGIN TO</h2>
-                                                    <span>Your Account</span>
-                                                    <div class="kd-login-network">
-                                                        <ul>
-                                                            <li><a href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i> Login with Facebook</a></li>
-                                                            <li><a href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i> Login with Twitter</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="kd-login-sepratore"><span>OR</span></div>
-
-                                                <form>
-                                                    <p><i class="fa fa-envelope-o"></i> <input type="text" placeholder="Email Address"></p>
-                                                    <p><i class="fa fa-lock"></i> <input type="password" placeholder="Your Password"></p>
-                                                    <p><input type="submit" value="Login now" class="thbg-color"> <a href="#">Forget Password?</a></p>
-                                                </form>
-
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -148,12 +67,9 @@
                                             @Html.ActionLink("Home", "Index", "Home")
                                         </li>
                                         <li>
-                                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                                        <li>@Html.ActionLink("About Us", "About", "Home")</li>
                                         <li>
                                         <li>@Html.ActionLink("Tour Packages", "Index", "Package")
-                                        </li>
-                                        <li>
-                                            <a href="">Gallery</a>
                                         </li>
                                         <li>
                                             @Html.ActionLink("Tourism Properties - Buy/Lease", "Index", "Property")
